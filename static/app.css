@@ -83,7 +83,7 @@ label[for^="out"] {
 }
 
 .voltage-controller {
-  display: none;
+  /* display: none; */
 }
 
 .voltage-controller a {

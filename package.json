@@ -1,0 +1,23 @@
+{
+  "name": "raspberry-pie-leds",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/valuu14/raspberry-pie-leds.git"
+  },
+  "author": "valentin molnar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/valuu14/raspberry-pie-leds/issues"
+  },
+  "homepage": "https://github.com/valuu14/raspberry-pie-leds#readme",
+  "dependencies": {
+    "express": "^4.17.3"
+  }
+}

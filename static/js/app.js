@@ -6,7 +6,7 @@ document.querySelectorAll('input[type="submit"]')
 
       Once a button was clicked, we gather the information about the pin configuration the user is about to make.
       The information includes the direction of the pin (input/output), the pin number and the value if the pin is configured
-      as an output (High/Low)
+      as an output (on/off)
 
     */
 
@@ -45,7 +45,7 @@ document.querySelectorAll('input[type="submit"]')
 
   }));
 
-// The voltage controller is initially hidden. Clicking an out label will make it visible to choose a value for the pin. Default is LOW
+// The voltage controller is initially hidden. Clicking an out label will make it visible to choose a value for the pin. Default is off
 
 document.querySelectorAll('label[for^=out]').
   forEach((el) => el.addEventListener('click', (evt) => {
@@ -59,8 +59,8 @@ document.querySelectorAll('label[for^=in]').
   }));
 
 
-// Clicking the RESET button on the voltage controller will reset the voltage option to LOW
+// Clicking the RESET button on the voltage controller will reset the voltage option to off
 document.querySelector('.voltage-controller > a').addEventListener('click', (evt) => {
   evt.preventDefault();
-  document.querySelector('[value=low]').checked = true;
+  document.querySelector('[value=off]').checked = true;
 })

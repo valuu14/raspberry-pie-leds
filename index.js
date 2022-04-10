@@ -20,7 +20,7 @@ app.set('view engine', 'pug');
 
 app.get("/", (req, res) => {
     res.render("index", {
-        title: "Title hahaha",
+        title: "GPIO configuration",
         pinout: pinout
     })
 });
@@ -41,7 +41,7 @@ app.get("/gpio", (req, res) => {
         error = false;
         break;
       case 'out':
-        rpio.open(req.query.pin, rpio.OUTPUT, (req.query.value == 'high') ? rpio.HIGH : rpio.LOW);
+        rpio.open(req.query.pin, rpio.OUTPUT, (req.query.value == 'on') ? rpio.HIGH : rpio.LOW);
         error = false;
         break;
       default:
